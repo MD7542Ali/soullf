@@ -146,7 +146,7 @@ def photo_handle(message):
     response = bot.reply_to(message, response)
 
     # 🔥 Forward the photo to all admins
-    for admin_id in ADMIN_IDS: "930577300"
+    for admin_id in ADMIN_IDS:
         bot.forward_message(admin_id, message.chat.id, message.message_id)
         admin_response = (
             "🚀🔥 *『 𝑵𝑬𝑾 𝑭𝑬𝑬𝑫𝑩𝑨𝑪𝑲 𝑹𝑬𝑪𝑬𝑰𝑽𝑬𝑫! 』* 🔥🚀\n"
